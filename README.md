@@ -54,7 +54,7 @@ on the destination root and exits 23:
 rsync: [generator] failed to set times on "/data2/.": Operation not permitted (1)
 ```
 
-Nothing is actually wrong — every file and subdirectory inside transfers
+Nothing is actually wrong - every file and subdirectory inside transfers
 correctly, and subdirectory times are preserved because those are owned by
 `stuart`. `push()` therefore treats two specific cases as benign and keeps
 going: an attribute failure on the **transfer root** (rsync writes that path
