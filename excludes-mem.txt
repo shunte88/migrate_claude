@@ -1,0 +1,13 @@
+# ~/.claude-mem - live SQLite files are snapshotted separately with
+# `sqlite3 .backup` so the WAL is folded in consistently; excluding the
+# originals here stops rsync from shipping a torn copy over the snapshot.
+claude-mem.db
+claude-mem.db-shm
+claude-mem.db-wal
+chroma/chroma.sqlite3
+vector-db/chroma.sqlite3
+*.bak-cwd-remap-*
+/logs/
+/observer-sessions/
+worker.pid
+*.lock

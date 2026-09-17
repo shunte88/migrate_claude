@@ -1,0 +1,39 @@
+# --------------------------------------------------------------------------
+# Rebuildable artifacts. These account for ~82G across /data2 and every one
+# of them is reproduced by cargo/npm/pip on the replacement machine.
+# --------------------------------------------------------------------------
+target/
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.next/
+.turbo/
+.gradle/
+dist/
+*.o
+*.rlib
+
+# --------------------------------------------------------------------------
+# Media and backup trees (~360G), anchored to the root of the transfer so
+# only these top-level directories match. Move these separately if wanted.
+# --------------------------------------------------------------------------
+/backup062926/
+/nacks/
+/source_rips/
+/vinyl_rips/
+/backhome/
+/pre-prep-music/
+/music/
+
+# Local trash / package caches
+/.Trash-1000/
+/.pnpm-store/
+/lost+found/
+/.
+/..

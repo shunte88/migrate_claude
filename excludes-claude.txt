@@ -1,0 +1,19 @@
+# ~/.claude - skip anything Claude Code regenerates on its own.
+# 3.4G of the 3.4G total lives in plugins/cache + plugins/marketplaces;
+# the manifests below it are kept so the same plugins reinstall verbatim.
+# Per-install identity marker: holds a machineID distinct from the one in
+# ~/.claude.json. Never transfer it - the replacement must write its own.
+/.claude.json
+
+/plugins/cache/
+/plugins/marketplaces/
+/plugins/install-counts-cache.json
+/cache/
+/debug/
+/downloads/
+/paste-cache/
+/shell-snapshots/
+/session-env/
+/ide/
+/statsig/
+.last-update-result.json
